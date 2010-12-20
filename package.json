@@ -1,0 +1,23 @@
+{
+    "name": "deckard",
+    "description": "A very simple async test runner with setup and teardown support",
+    "tags": [
+        "javascript",
+        "test",
+        "unittest",
+        "runner"
+    ],
+    "version": "0.0.1",
+    "author": "Tom Drummond <tom@devioustree.com>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/devioustree/deckard.git"
+    },
+    "bugs": "https://github.com/devioustree/deckard/issues",
+    "directories": {
+        "lib" : "./lib"
+    },
+    "main": "./lib",
+    "dependencies": {
+    },
+}
