@@ -29,5 +29,4 @@ t.setup(
     function() {
         console.log('I have nothing to do :(')
     }
-)
-t.run()
+).run()
