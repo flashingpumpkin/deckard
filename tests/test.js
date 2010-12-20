@@ -1,7 +1,7 @@
 var assert = require('assert');
-var test = require('../lib/test')
+var deckard = require('../lib/deckard')
 
-var t = new test
+var t = new deckard
 t.setup(
     function() {
         console.log('Running setup');
