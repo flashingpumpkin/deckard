@@ -1,16 +1,16 @@
-var assert  = require('assert');
-var tester  = require('../lib/test');
+var assert = require('assert');
+var test = require('../lib/test')
 
-var test = new tester();
-
-test.setup(
+var t = new test
+t.setup(
     function() {
         console.log('Running setup');
         this(null, true);
     },
-    function(finished) {
+    function(err, finished) {
         if (finished) {
             console.log('Finished setup')
+            this();
         }
     }
 ).tests(
@@ -23,10 +23,11 @@ test.setup(
         this();
     },
     function() {
-        assert.notEqual(1, 1);
+        setTimeout(function(){assert.notEqual(1, 1);this();}, 2000)
     }
 ).teardown(
     function() {
         console.log('I have nothing to do :(')
     }
-).run()
+)
+t.run()

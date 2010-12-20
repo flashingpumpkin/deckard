@@ -2,6 +2,7 @@
     "name": "deckard",
     "description": "A very simple async test runner with setup and teardown support",
     "tags": [
+        "node",
         "javascript",
         "test",
         "unittest",
