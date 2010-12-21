@@ -8,7 +8,7 @@
         "unittest",
         "runner"
     ],
-    "version": "0.0.2",
+    "version": "0.0.4",
     "author": "Tom Drummond <tom@devioustree.com>",
     "repository": {
         "type": "git",
