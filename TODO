@@ -1,0 +1,5 @@
+✓ `run()` should accept parameters which are passed to all other methods
+✓ get awesome ascii of rick deckard
+- Use `node-arse` to handle assertions so no exceptions are thrown
+- Make sure it can run multiple test runners in one script
+- Reporting
