@@ -23,10 +23,15 @@ t.setup(
         this();
     },
     function() {
-        setTimeout(function(){assert.notEqual(1, 1);this();}, 2000)
+        var self = this;
+        setTimeout(function(){
+            assert.notEqual(1, 2);
+            self();
+        }, 2000)
     }
 ).teardown(
     function() {
         console.log('I have nothing to do :(')
+        this()
     }
 ).run()
